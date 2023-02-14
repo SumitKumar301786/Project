@@ -1,0 +1,43 @@
+body{
+  background-color: red;
+}
+div{
+  font-size: x-large;
+  font-weight: 800;
+  text-align: center;
+}
+div::after{
+  content: 'This is a Media Query demo page.';
+}
+@media (max-width:425px){
+  body{
+      background-color: rgb(243, 10, 49);
+  }
+  div::after{
+      content: 'This is a Media Query demo page.';
+  }
+}
+@media (min-width:425px) {
+  body{
+      background-color: aqua;
+  }
+  div::after{
+      content: 'This is a Media Query demo page.';
+  }
+}
+@media (min-width:768px){
+  body{
+      background-color: rgb(241, 141, 11);
+  }
+  div::after{
+      content: 'This is a Media Query demo page.';
+  }
+}
+@media (min-width:1024px){
+  body{
+      background-color: green;
+  }
+  div::after{
+      content: 'This is a Media Query demo page.';
+  }
+}
